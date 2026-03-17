@@ -135,6 +135,7 @@ async function connect() {
             alert(`Unsupported network (${currentChainId}). Please switch to Sepolia (11155111) or BNB Testnet (97).`);
             isConnected = false;
             updateUI();
+            updateBalances();
             return;
         }
 
